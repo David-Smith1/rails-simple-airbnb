@@ -1,0 +1,42 @@
+<head>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    
+
+<h1><%= "All our flats (#{@flats.count})" %> </h1>
+
+
+    <div class="row"></div>
+<% @flats.each do |flat| %>
+  <div class="col-4">
+        <div class="card-container">
+          <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200')"></div>
+          <div class="card-content">
+            <div class="card-title">
+              <h4><%= flat.name %></h4>
+            </div>
+            <p><%= flat.description %></p>
+            <div class="flex">
+              <div class="flex">
+                <i class="material-icons mr-2">people</i><span><%= flat.number_of_guests %></span>
+              </div>
+              <div class="flex ml-3">
+                <i class="material-icons mr-2">euro_symbol</i> <%= flat.price_per_night %>
+              </div>
+            </div>
+          </div>
+          <div class="card-actions">
+            <a href="/flats/4250">More info</a> // TODO:turn into LINK_TO
+            <a class="ml-3 text-warning" href="/flats/4250/edit">Edit</a>// TODO:turn into LINK_TO
+            <a data-confirm="Are you sure?" class="ml-3 text-danger" rel="nofollow" data-method="delete" href="/flats/4250">Remove</a>// TODO:turn into LINK_TO
+          </div>
+        </div>
+    </div>
+  <% end %>
+</div>
+
+</body>
