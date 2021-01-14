@@ -28,7 +28,7 @@
 
 
 .card {
-    height: 350px;
+  
     margin-bottom: 35px;
 }
 
@@ -51,14 +51,16 @@ h1 {
 .card-actions {
     width: 100%;
     position: absolute;
-    bottom: 18px;
+    bottom: 0px;
     left: 0px;
     background-color: white;
-    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
 }
 
 .card-image {
-    height: 200px;
+    height: 180px;
     background-size: cover;
 }
 
