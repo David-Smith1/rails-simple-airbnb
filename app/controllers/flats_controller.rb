@@ -22,7 +22,13 @@ class FlatsController < ApplicationController
 
     def edit
         @flat = Flat.find(params[:id])
-        redirect_to flat_path
+        redirect_to flat_path(@flat)
+    end
+
+    def destroy
+        @flat = Flat.find(params[:id])
+        @flat.destroy
+        redirect_to flats_path
     end
 
     

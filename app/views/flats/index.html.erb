@@ -23,9 +23,9 @@
             </div>
           </div>
           <div class="card-actions">
-            <a href="">More info</a> 
-            <a class="ml-3 text-warning" href="">Edit</a>
-            <a data-confirm="Are you sure?" class="ml-3 text-danger"  data-method="delete" href="">Remove</a>
+            <%= link_to 'More info', flat_path(flat) %> 
+            <%= link_to 'Edit', flat_path(flat), class: 'text-warning' %>
+            <%= link_to 'Delete', flat_path(flat), class: 'text-danger', method: :delete %>
           </div>
           </div>
         </div>
