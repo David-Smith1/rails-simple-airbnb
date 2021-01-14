@@ -1,1 +1,52 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
 @import "bootstrap/scss/bootstrap";
+// @import "font-awesome-sprockets";
+// @import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+
+
+.material-icons{
+    font-family:'Material Icons';
+    font-weight:normal;
+    font-style:normal;
+    font-size:24px;
+    line-height:1;
+    letter-spacing:normal;
+    text-transform:none;
+    display:inline-block;
+  }
+
+.card {
+    height: 350px;
+    margin-bottom: 35px;
+}
+
+html {
+    min-width: 300px;
+}
+
+h1 {
+    margin-bottom: 35px;
+    margin-top: 30px;
+}
+
+
+
+
+
+@font-face{
+    font-family:'Material Icons';
+    font-style:normal;
+    font-weight:400;
+    src:url(https://fonts.gstatic.com/s/materialicons/v70/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+

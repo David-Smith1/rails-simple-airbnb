@@ -1,20 +1,13 @@
-<head>
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+<h1 class="d-flex justify-content-center"><%= "All our flats (#{@flats.count})" %> </h1>
 
-<body>
-    
-
-<h1><%= "All our flats (#{@flats.count})" %> </h1>
-
-
-    <div class="row"></div>
+<div class="container">
+    <div class="row">
 <% @flats.each do |flat| %>
-  <div class="col-4">
-        <div class="card-container">
-          <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200')"></div>
+  <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card">
+          <div class="card-body">
+          <div class="card-image" style="background-image: url('')"></div>
           <div class="card-content">
             <div class="card-title">
               <h4><%= flat.name %></h4>
@@ -30,13 +23,13 @@
             </div>
           </div>
           <div class="card-actions">
-            <a href="/flats/4250">More info</a> // TODO:turn into LINK_TO
-            <a class="ml-3 text-warning" href="/flats/4250/edit">Edit</a>// TODO:turn into LINK_TO
-            <a data-confirm="Are you sure?" class="ml-3 text-danger" rel="nofollow" data-method="delete" href="/flats/4250">Remove</a>// TODO:turn into LINK_TO
+            <a href="">More info</a> // TODO:turn into LINK_TO
+            <a class="ml-3 text-warning" href="">Edit</a>// TODO:turn into LINK_TO
+            <a data-confirm="Are you sure?" class="ml-3 text-danger"  data-method="delete" href="">Remove</a>// TODO:turn into LINK_TO
+          </div>
           </div>
         </div>
     </div>
   <% end %>
 </div>
-
-</body>
+</div>
