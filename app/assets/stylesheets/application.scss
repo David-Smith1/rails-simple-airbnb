@@ -25,20 +25,37 @@
     display:inline-block;
   }
 
+
+
 .card {
     height: 350px;
     margin-bottom: 35px;
 }
 
-html {
-    min-width: 300px;
+.card-body {
+    height: 300px;
+    background-color: #f8f9fa;
 }
+
+
 
 h1 {
     margin-bottom: 35px;
     margin-top: 30px;
 }
 
+.flex {
+    display: flex;
+    
+}
+.card-actions {
+    width: 100%;
+    position: absolute;
+    bottom: 18px;
+    left: 0px;
+    background-color: white;
+    justify-content: center;
+}
 
 
 
