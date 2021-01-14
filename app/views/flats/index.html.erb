@@ -25,16 +25,14 @@
             <p><%= flat.description %></p>
             <div class="flex">
               <div class="flex">
-                <i class="material-icons mr-2">people</i><span><%= flat.number_of_guests %></span>
-              </div>
-              <div class="flex ml-3">
-                <i class="material-icons mr-2">euro_symbol</i> <%= flat.price_per_night %>
+                <i class="material-icons mr-2">people</i><span class="mr-2"><%= flat.number_of_guests %></span>
+                 <i class="material-icons mr-2">euro_symbol</i> <%= flat.price_per_night %>
               </div>
             </div>
           </div>
           <div class="card-actions">
             <%= link_to 'More info', flat_path(flat), class: 'ml-3' %> 
-            <%= link_to 'Edit', flat_path(flat), class: 'text-warning ml-5' %>
+            <%= link_to 'Edit', flat_path(flat), class: 'text-warning ml-2' %>
             <%= link_to 'Delete', flat_path(flat), class: 'text-danger ml-2', method: :delete %>
           </div>
           </div>
